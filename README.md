@@ -1,4 +1,4 @@
-# vue-3-basics
+# Vue 3 basics
 
 ## Intro
 
@@ -9,20 +9,16 @@
 ## Project Setup
 
 ```sh
+# install all dependecies
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Compile and Hot-Reload for Development
 npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
+# Type-Check, Compile and Minify for Production
 npm run build
 ```
+
 
 ## Recommended IDE Setup
 
