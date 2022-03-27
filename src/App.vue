@@ -2,14 +2,14 @@
     <div class="center">
         <!-- <MyStyleComponent/> -->
         <!-- <Conditions/> -->
-        <Watch />
+        <!-- <Reactivity /> -->
     </div>
 </template>
 
 <script setup lang="ts">
 import MyStyleComponent from './components/Style/MyStyleComponent.vue';
 import Conditions from './components/Conditions/Conditions.vue';
-import Watch from './components/Watch/Watch.vue';
+import Reactivity from './components/Reactivity/Reactivity.vue';
 
 </script>
 
