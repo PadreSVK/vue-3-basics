@@ -1,9 +1,10 @@
 <template>
     <Ref />
     <Reactive />
-    <!-- <Computed/>
-        <Watch />
-    <Props/>-->
+    <Computed />
+
+    <!-- <Watch /> -->
+    <!-- <Props/> -->
 </template>
 
 <script setup lang="ts">
