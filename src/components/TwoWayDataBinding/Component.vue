@@ -1,5 +1,4 @@
 <template>
-    <h3>TwoWayDataBinding</h3>
     <input type="text" :value="props.name" @change="update(($event.target as any).value)" />
 </template>
 

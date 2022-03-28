@@ -1,5 +1,5 @@
 <template>
-    <h3>OneWayDataBinding</h3>
+    <h3>Simple property</h3>
     <span>{{ name }}</span>
 </template>
 
@@ -8,6 +8,5 @@ defineProps(["name"])
 
 //alternative syntax = for script access
 // const props = defineProps(["name"])
-// access via
-// const name = props.name
+// const name = props.name // in script access
 </script>
