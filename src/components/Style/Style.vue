@@ -1,7 +1,8 @@
 <template>
-    <div :class="classes">
-        <h1>Hellou from component</h1>
+    <h1>Style</h1>
+    <div :class="{ center: classes.center }">Some content</div>
 
+    <div :class="classes">
         <input type="checkbox" v-model="classes.center" id="isCenter" />
         <label for="isCenter">Center</label>
         <input type="checkbox" v-model="classes['static-class']" id="isStatic" />

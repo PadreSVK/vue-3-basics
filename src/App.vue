@@ -8,11 +8,15 @@
         <label for="props">Props</label>
         <input type="checkbox" v-model="events" />
         <label for="events">Events</label>
+        <input type="checkbox" v-model="style" />
+        <label for="style">Style</label>
 
         <Reactivity v-if="reactivity" />
         <Conditions v-if="conditions" />
         <Props v-if="props" />
         <Events v-if="events" />
+        <Styles v-if="style" />
+        
         <!-- <MyStyleComponent/> -->
         <!-- <Conditions/> -->
 
@@ -24,14 +28,15 @@ import Reactivity from './components/Reactivity/Reactivity.vue';
 import Conditions from './components/Conditions/Conditions.vue';
 import Props from './components/Props/Props.vue';
 
-import MyStyleComponent from './components/Style/MyStyleComponent.vue';
 import { ref } from 'vue';
 import Events from './components/Events/Events.vue';
+import Styles from './components/Style/Style.vue';
 
 const reactivity = ref(false)
 const conditions = ref(false)
 const props = ref(false)
 const events = ref(false)
+const style = ref(false)
 
 </script>
 
