@@ -16,7 +16,6 @@
         <!-- <MyStyleComponent/> -->
         <!-- <Conditions/> -->
 
-        <!-- <TreeView/> -->
     </div>
 </template>
 
@@ -26,7 +25,6 @@ import Conditions from './components/Conditions/Conditions.vue';
 import Props from './components/Props/Props.vue';
 
 import MyStyleComponent from './components/Style/MyStyleComponent.vue';
-import TreeView from './exercises/TreeView/TreeView.vue';
 import { ref } from 'vue';
 import Events from './components/Events/Events.vue';
 
