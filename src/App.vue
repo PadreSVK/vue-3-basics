@@ -1,6 +1,7 @@
 <template>
     <div class="center">
-        <Reactivity />
+        <!-- <Reactivity /> -->
+        <Conditions />
         <!-- <MyStyleComponent/> -->
         <!-- <Conditions/> -->
         <!-- <Reactivity /> -->
