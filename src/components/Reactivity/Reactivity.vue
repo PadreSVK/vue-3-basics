@@ -2,9 +2,7 @@
     <Ref />
     <Reactive />
     <Computed />
-
-    <!-- <Watch /> -->
-    <!-- <Props/> -->
+    <Watch />
 </template>
 
 <script setup lang="ts">

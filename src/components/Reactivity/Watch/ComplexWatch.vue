@@ -1,10 +1,9 @@
 <template>
+    <h1>ComplexWatch</h1>
+
     <input id="Search" type="text" v-model="query" placeholder="Search" />
     <ul>
-        <li v-for="item in items" :key="item.id">
-            {{ item.label }} : {{ item.age }}
-            <br />
-        </li>
+        <li v-for="item in items" :key="item.id">{{ item.label }} : {{ item.age }}</li>
     </ul>
 </template>
 
@@ -42,10 +41,13 @@ const data = [
     { id: "da51a685fa154492a0e7cea6f7e29848", label: "June", age: 89, },
 ];
 
-const items = ref(data)
 const query = ref("")
 
+// interactive filter on data (we dont want to loose original data)
+const items = ref(data)
+
 watch(query, q => {
+    console.log("watch(query, q => {");
     console.log({ query: q });
     items.value = data.filter(i => i.label.includes(q))
 })
