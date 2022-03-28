@@ -1,7 +1,9 @@
 <template>
-    <input type="checkbox" v-model="treeView" />
-    <label for="style">Tree View</label>
-    <TreeView />
+    <div class="center">
+        <input type="checkbox" v-model="treeView" />
+        <label for="style">Tree View</label>
+        <TreeView v-if="treeView" />
+    </div>
 </template>
 
 <script setup lang="ts">
