@@ -1,10 +1,8 @@
 <template>
-    <div>
-        <h1>Reactive</h1>
-        {{ complexReactiveProperty }}
-        <input type="text" v-model="complexReactiveProperty.name" />
-        <button @click="changeName">Change name of object</button>
-    </div>
+    <h1>Reactive</h1>
+    {{ complexReactiveProperty }}
+    <input type="text" v-model="complexReactiveProperty.name" />
+    <button @click="changeName">Change name of object</button>
 </template>
 
 <script setup lang="ts">

@@ -1,11 +1,9 @@
 <template>
-    <div>
-        <Ref/>
-        <Reactive/>
-        <!-- <Computed/>
+    <Ref />
+    <Reactive />
+    <!-- <Computed/>
         <Watch />
-        <Props/> -->
-    </div>
+    <Props/>-->
 </template>
 
 <script setup lang="ts">
