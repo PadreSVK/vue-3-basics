@@ -1,5 +1,7 @@
 <template>
-    <input type="text" :value="props.name" @change="update(($event.target as any).value)" />
+    <div>
+        <input type="text" :value="props.name" @change="update(($event.target as any).value)" />
+    </div>
 </template>
 
 <script setup lang="ts">

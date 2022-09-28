@@ -5,8 +5,9 @@
     <div :class="classes">
         <input type="checkbox" v-model="classes.center" id="isCenter" />
         <label for="isCenter">Center</label>
+
         <input type="checkbox" v-model="classes['static-class']" id="isStatic" />
-        <label for="isStatic">isStatic</label>
+        <label for="isStatic">Is Static</label>
 
         <input type="text" v-model="myStyleObject.color" />
         <input type="text" v-model="myStyleObject.width" />
@@ -28,7 +29,7 @@ const classes = reactive({
 })
 
 </script>
-
+<!-- scoped add attribute to every element from template -->
 <style scoped>
 .center {
     margin: auto;
