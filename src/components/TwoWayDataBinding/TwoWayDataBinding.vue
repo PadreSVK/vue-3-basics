@@ -4,6 +4,7 @@
 
     <!-- TwoWayDataBinding -->
     <Component :name="name"  @update:name="name = $event"/>
+
     <!-- simplified -->
     <Component v-model:name="name"/>
 </template>
@@ -15,6 +16,3 @@ import Component from "./Component.vue";
 const name = ref("")
 
 </script>
-
-<style scoped>
-</style>
