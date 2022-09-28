@@ -16,8 +16,7 @@ export default {
         // don't forget to expose the function as well.
         return {
             count,
-            increment,
-            onMounted
+            increment
         }
     }
 }

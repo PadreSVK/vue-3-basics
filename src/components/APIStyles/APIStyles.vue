@@ -1,8 +1,9 @@
 <template>
-    <div></div>
-    <CompositionAPI></CompositionAPI>
-    <CompositionSetupAPI></CompositionSetupAPI>
-    <OptionsAPI></OptionsAPI>
+    <div>
+        <CompositionAPI></CompositionAPI>
+        <CompositionSetupAPI></CompositionSetupAPI>
+        <OptionsAPI></OptionsAPI>
+    </div>
 </template>
 
 <script setup lang="ts">
