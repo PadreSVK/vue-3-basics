@@ -23,9 +23,12 @@
 
         <input type="checkbox" v-model="exercises" />
         <label for="exercises">Exercises</label>
-        
+
         <input type="checkbox" v-model="pinia" />
         <label for="pinia">Pinia</label>
+
+        <input type="checkbox" v-model="router" />
+        <label for="router">Router</label>
 
         <APIStyles v-if="apistyles" />
         <Reactivity v-if="reactivity" />
@@ -38,7 +41,13 @@
 
         <Pinia v-if="pinia"></Pinia>
 
+        <div v-if="router">
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink :to="{name: 'about'}">About</RouterLink>
+            <RouterView></RouterView>
+        </div>
     </div>
+  
 </template>
 
 <script setup lang="ts">
@@ -63,6 +72,7 @@ const style = ref(false)
 const twoWayBinding = ref(false)
 const exercises = ref(false)
 const pinia = ref(false)
+const router = ref(false)
 
 </script>
 
