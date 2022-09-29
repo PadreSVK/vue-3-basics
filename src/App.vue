@@ -2,37 +2,41 @@
     <div class="center">
         <input type="checkbox" v-model="apistyles" id="apistyles" />
         <label for="apistyles">API Styles</label>
-        
+
         <input type="checkbox" v-model="reactivity" id="reactivity" />
         <label for="reactivity">Reactivity</label>
-        
+
         <input type="checkbox" v-model="conditions" />
         <label for="conditions">Conditions</label>
-        
+
         <input type="checkbox" v-model="props" />
         <label for="props">Props</label>
-        
+
         <input type="checkbox" v-model="events" />
         <label for="events">Events</label>
 
         <input type="checkbox" v-model="twoWayBinding" />
         <label for="twoWayBinding">Two way data binding</label>
-        
+
         <input type="checkbox" v-model="style" />
         <label for="style">Style</label>
-        
+
         <input type="checkbox" v-model="exercises" />
         <label for="exercises">Exercises</label>
+        
+        <input type="checkbox" v-model="pinia" />
+        <label for="pinia">Pinia</label>
 
         <APIStyles v-if="apistyles" />
-        <Reactivity v-if="reactivity" />
         <Reactivity v-if="reactivity" />
         <Conditions v-if="conditions" />
         <Props v-if="props" />
         <Events v-if="events" />
-        <TwoWayDataBinding v-if="twoWayBinding"/>
+        <TwoWayDataBinding v-if="twoWayBinding" />
         <Styles v-if="style" />
-        <Exercises v-if="exercises"/>
+        <Exercises v-if="exercises" />
+
+        <Pinia v-if="pinia"></Pinia>
 
     </div>
 </template>
@@ -47,6 +51,7 @@ import Events from './components/Events/Events.vue';
 import TwoWayDataBinding from './components/TwoWayDataBinding/TwoWayDataBinding.vue';
 import Styles from './components/Style/Style.vue';
 import Exercises from './exercises/Exercises.vue';
+import Pinia from './components/Pinia/Pinia.vue';
 
 
 const apistyles = ref(false)
@@ -57,6 +62,7 @@ const events = ref(false)
 const style = ref(false)
 const twoWayBinding = ref(false)
 const exercises = ref(false)
+const pinia = ref(false)
 
 </script>
 
