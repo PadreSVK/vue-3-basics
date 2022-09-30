@@ -30,9 +30,6 @@
         <input type="checkbox" v-model="router" />
         <label for="router">Router</label>
 
-         <input type="checkbox" v-model="i18n" />
-        <label for="i18n">i18n</label>
-
         <APIStyles v-if="apistyles" />
         <Reactivity v-if="reactivity" />
         <Conditions v-if="conditions" />
