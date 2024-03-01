@@ -8,6 +8,7 @@
 </template>
 
 <script setup lang="ts">
+import type { PropType } from 'vue';
 import type { TodoItem } from './Models';
 
 // //runtime based declaration
@@ -34,6 +35,15 @@ defineProps<{
     todo: TodoItem
     other?: string
 }>()
+
+
+defineProps({
+    value: {
+        type: null as unknown as PropType<string | null>,
+        default: null,
+        required: false
+    }
+})
 
 </script>
 
